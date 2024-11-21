@@ -1,4 +1,5 @@
-#!/bin/bash
+
+        #!/bin/bash
 
         # Check if the user provided a file name as an argument
         if [ $# -eq 0 ]; then
@@ -19,4 +20,4 @@
         if ! openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -salt -in "/home/ctf-player/drop-in/$file_name" -k picoCTF; then
             echo "Error: Failed to decrypt '$file_name'. This flag is fake! Keep looking!"
         fi
-
+        
