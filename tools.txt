@@ -1,0 +1,16 @@
+Forensics Tools:
+
+		xdg-open:
+				open img from cli
+		exiftool:
+				read meta-data
+		hexedit:
+				converts file to hexidecmal
+		ghex:
+				GUI hexedit alternative
+		strings:
+				pints bin data of file
+		file:
+				prints file type info
+		zbarimg:
+				decodes QR codes
