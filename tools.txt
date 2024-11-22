@@ -4,13 +4,41 @@ Forensics Tools:
 				open img from cli
 		exiftool:
 				read meta-data
-		hexedit:
+		hexedit / ghex:
 				converts file to hexidecmal
-		ghex:
-				GUI hexedit alternative
 		strings:
 				pints bin data of file
 		file:
 				prints file type info
 		zbarimg:
 				decodes QR codes
+
+Cryptography:
+
+		base64:
+				decode base64 encoded strings with echo 'string' | base64 -d
+
+Encoding Standards:
+
+		Base64:
+				Base64 has strings:
+						A - Z
+						a - z
+						0 - 9
+						+, /, = (padding at end of string)
+		
+		Base32:
+				Base32 has strings:
+						A - Z
+						2 - 7
+						= (padding at the end of string)
+
+		Base58:
+				Base58 has strings:
+						follows Base64 without:
+								0, O, I, l (lowercase l)
+
+		Hexadecimeal (Hex):
+				Hex has strings:
+						A - F
+						0 - 8
