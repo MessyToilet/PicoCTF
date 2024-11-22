@@ -1,0 +1,23 @@
+Headers and Footers for common img types:
+		
+		JPEG (.jpg / .jpeg):
+				Header: FF D8 FF (typically followed by markers E0 or E1)
+				Footer: FF D9
+
+		PNG (.png):
+				Header: 89 50 4E 47 0D 0A 1A 0A
+				Footer: 49 45 4E 44 AE 42 60 82
+
+		GIF (.gif):
+				GIF89a Header: 47 49 46 38 39 61
+				GIF87a Header: 47 49 46 38 37 61 
+				       Footer: 00 3B
+
+		BMP (.bmp):
+				Header: 42 4D
+				Footer: none
+
+		TIFF (.tif / .tiff):
+				Header: 49 49 2A 00 (little-endian, intel format)
+				Header: 4D 4D 00 2A (big-endian, motorola format)
+				Footer: none
